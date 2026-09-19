@@ -676,6 +676,40 @@
   .social-link:hover { color: var(--gold); }
   .social-link svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
 
+  .stream-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .stream-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--parchment);
+    background: rgba(91,155,213,0.08);
+    border: 1px solid rgba(91,155,213,0.25);
+    padding: 0.45rem 1rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .stream-link:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--espresso);
+  }
+  .stream-link.featured {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--espresso);
+  }
+  .stream-link.featured:hover { background: var(--parchment); border-color: var(--parchment); }
+
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -1004,10 +1038,15 @@
       <p class="section-label">Get in touch</p>
       <h2 class="contact-heading">Bookings. Features. <em>Business.</em></h2>
       <p class="contact-sub">For show bookings, features, press, or anything else — reach out through the form or connect directly on socials.</p>
-      <a href="https://www.youtube.com/@Dvskayofficial99" target="_blank" class="social-link" style="color:var(--gold);border-color:var(--gold);margin-bottom:1.5rem;">
-        <svg viewBox="0 0 24 24" style="width:16px;height:16px;"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-        Latest Release — Stream Now
-      </a>
+      <div class="stream-links">
+        <a href="https://www.youtube.com/@Dvskayofficial99" target="_blank" class="stream-link featured">YouTube ↗</a>
+        <a href="https://open.spotify.com/artist/5wnzjnPpEMzfCmuhodgNN3" target="_blank" class="stream-link">Spotify</a>
+        <a href="https://geo.music.apple.com/artist/dvskay/1604142819" target="_blank" class="stream-link">Apple Music</a>
+        <a href="https://geo.music.apple.com/artist/dvskay/1604142819" target="_blank" class="stream-link">iTunes</a>
+        <a href="https://www.deezer.com/album/286676072" target="_blank" class="stream-link">Deezer</a>
+        <a href="https://www.tidal.com/track/211835383" target="_blank" class="stream-link">Tidal</a>
+        <a href="https://soundcloud.com/dv_skay/tracks" target="_blank" class="stream-link">SoundCloud</a>
+      </div>
 
       <div class="social-links">
         <a href="https://www.instagram.com/dv_skay" target="_blank" class="social-link">
